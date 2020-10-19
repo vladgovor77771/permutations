@@ -56,6 +56,7 @@ class Permutation {
   printAsCycle() {
     let res = "";
     let checked = [];
+    this.sortNodes();
     for (let node of this.nodes) {
       if (checked.find(from => from == node.from)) continue;
       res += "(";
